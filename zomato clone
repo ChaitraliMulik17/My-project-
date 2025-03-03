@@ -1,0 +1,215 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Zomato Clone
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+   <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+    <div class="flex items-center">
+     <img alt="Zomato logo, a stylized red 'Z' with a fork and knife" class="h-10 w-10" height="50" src="https://storage.googleapis.com/a1aa/image/yfiZ2woDUsToS6JdawfAvUWyPMMgHlHtUZdjrHYQlMSm2e9nA.jpg" width="50"/>
+     <span class="text-xl font-bold ml-2">
+      Zomato Chaitrali
+     </span>
+    </div>
+    <div class="hidden md:flex space-x-4">
+     <a class="text-gray-700 hover:text-red-500" href="#">
+      Home
+     </a>
+     <a class="text-gray-700 hover:text-red-500" href="#">
+      Order
+     </a>
+     <a class="text-gray-700 hover:text-red-500" href="#">
+      About
+     </a>
+     <a class="text-gray-700 hover:text-red-500" href="#">
+      Contact
+     </a>
+    </div>
+    <div class="md:hidden">
+     <button class="text-gray-700 focus:outline-none" id="menu-btn">
+      <i class="fas fa-bars">
+      </i>
+     </button>
+    </div>
+   </div>
+  </nav>
+  <!-- Mobile Menu -->
+  <div class="hidden md:hidden bg-white shadow-md" id="mobile-menu">
+   <a class="block px-4 py-2 text-gray-700 hover:text-red-500" href="#">
+    Home
+   </a>
+   <a class="block px-4 py-2 text-gray-700 hover:text-red-500" href="#">
+    Order
+   </a>
+   <a class="block px-4 py-2 text-gray-700 hover:text-red-500" href="#">
+    About
+   </a>
+   <a class="block px-4 py-2 text-gray-700 hover:text-red-500" href="#">
+    Contact
+   </a>
+  </div>
+  <!-- Hero Section -->
+  <section class="relative">
+   <img alt="A vibrant cityscape with various restaurants and food stalls" class="w-full h-96 object-cover" height="600" src="https://storage.googleapis.com/a1aa/image/sM1MexFfDykucklP4LnGHKmZLDO2SSerAcslHUDa7h1Bt99nA.jpg" width="1920"/>
+   <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center">
+    <h1 class="text-white text-4xl md:text-6xl font-bold">
+     Discover the best food &amp; drinks
+    </h1>
+    <div class="mt-4 flex space-x-2">
+     <input class="px-4 py-2 w-64 md:w-96 rounded-l-md focus:outline-none" placeholder="Search for restaurants or cuisines..." type="text"/>
+     <button class="bg-red-500 text-white px-4 py-2 rounded-r-md">
+      Search
+     </button>
+    </div>
+   </div>
+  </section>
+  <!-- Popular Restaurants -->
+  <section class="container mx-auto px-4 py-8">
+   <h2 class="text-2xl font-bold mb-4">
+    Popular Restaurants
+   </h2>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="A cozy Italian restaurant with a rustic interior" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/Fnw906Hom3JFDFf50mS7eLQfXjSw1GiDjYpLewkQGKrFa77PB.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-bold">
+       Italian Bistro
+      </h3>
+      <p class="text-gray-600">
+       Italian, Pizza
+      </p>
+      <div class="mt-2 flex items-center">
+       <i class="fas fa-star text-yellow-500">
+       </i>
+       <i class="fas fa-star text-yellow-500">
+       </i>
+       <i class="fas fa-star text-yellow-500">
+       </i>
+       <i class="fas fa-star text-yellow-500">
+       </i>
+       <i class="fas fa-star-half-alt text-yellow-500">
+       </i>
+       <span class="ml-2 text-gray-600">
+        (4.5)
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="A modern sushi bar with a sleek design" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/7pVyaGQzrwpwOxwJefneteAxmaV0KCwPOllJ9Imu2e7zz23fE.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-bold">
+       Sushi Bar
+      </h3>
+      <p class="text-gray-600">
+       Japanese, Sushi
+      </p>
+      <div class="mt-2 flex items-center">
+       <i class="fas fa-star text-yellow-500">
+       </i>
+       <i class="fas fa-star text-yellow-500">
+       </i>
+       <i class="fas fa-star text-yellow-500">
+       </i>
+       <i class="fas fa-star text-yellow-500">
+       </i>
+       <i class="fas fa-star text-yellow-500">
+       </i>
+       <span class="ml-2 text-gray-600">
+        (5.0)
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="A vibrant Indian restaurant with colorful decor" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/eKyWUZE28rWAWimnXSCSi1DNzIiKYvS06S0AyE5f2GIj2e9nA.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-bold">
+       Spice House
+      </h3>
+      <p class="text-gray-600">
+       Indian, Curry
+      </p>
+      <div class="mt-2 flex items-center">
+       <i class="fas fa-star text-yellow-500">
+       </i>
+       <i class="fas fa-star text-yellow-500">
+       </i>
+       <i class="fas fa-star text-yellow-500">
+       </i>
+       <i class="fas fa-star text-yellow-500">
+       </i>
+       <i class="fas fa-star text-yellow-500">
+       </i>
+       <span class="ml-2 text-gray-600">
+        (5.0)
+       </span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+   <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row justify-between">
+     <div class="mb-4 md:mb-0">
+      <h3 class="text-xl font-bold">
+       Zomato
+      </h3>
+      <p class="text-gray-400">
+       Discover the best food &amp; drinks in your city.
+      </p>
+     </div>
+     <div class="flex space-x-4">
+      <a class="text-gray-400 hover:text-white" href="#">
+       <i class="fab fa-facebook-f">
+       </i>
+      </a>
+      <a class="text-gray-400 hover:text-white" href="#">
+       <i class="fab fa-twitter">
+       </i>
+      </a>
+      <a class="text-gray-400 hover:text-white" href="#">
+       <i class="fab fa-instagram">
+       </i>
+      </a>
+      <a class="text-gray-400 hover:text-white" href="#">
+       <i class="fab fa-linkedin-in">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="mt-4 text-gray-400 text-sm">
+     <p>
+      © 2023 Zomato. All rights reserved.
+     </p>
+    </div>
+   </div>
+  </footer>
+  <script>
+   document.getElementById('menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+  </script>
+ </body>
+</html>
